@@ -1,0 +1,33 @@
+@media (max-width: 870px) {
+    .card {
+        flex-direction: column;
+        max-width: 350px;
+        &__left-side {
+            width: 350px;
+            height: 245px;
+            border-radius: 10px 10px 0 0;
+        }
+        &__right-side {
+            padding: 0px 35px;
+        }
+        &__text_big {
+            font-size: 17px;
+        }
+        &__bottom {
+            margin-bottom: 20px;
+        }
+        &__contacts-wrap {
+            width: 350px;
+            height: 65px;
+            top: -5px;
+            left: -300px;
+            border-radius: 0 0 10px 10px;
+        }
+        &__contacts-wrap::before {
+            display: none;
+        }
+        &__circle_mobile {
+            display: flex;
+        }
+    }
+}

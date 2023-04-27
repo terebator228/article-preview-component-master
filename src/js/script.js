@@ -4,6 +4,15 @@ const btn = document.querySelector('.card__btn'),
       circle = document.querySelector('.card__circle'),
       arrow = document.querySelector('.card__circle svg path');
 
+let pageWidth = document.documentElement.scrollWidth;
+
+console.log(pageWidth)
+
+document.addEventListener('scroll', () => {
+    pageWidth = document.documentElement.scrollWidth;
+    console.log(pageWidth);
+})
+
 function hideContacts() {
     share.classList.remove('card__contacts-wrap_active')
 }
