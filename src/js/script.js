@@ -6,13 +6,6 @@ const btn = document.querySelector('.card__btn'),
 
 let pageWidth = document.documentElement.scrollWidth;
 
-console.log(pageWidth)
-
-document.addEventListener('scroll', () => {
-    pageWidth = document.documentElement.scrollWidth;
-    console.log(pageWidth);
-})
-
 function hideContacts() {
     share.classList.remove('card__contacts-wrap_active')
 }
